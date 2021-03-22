@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@300;400;700&display=swap');
+$color: #414f9e;
+$colorLight: #fff;
+$colorDark: #000;
+$colorOrange: #ff6901;
+$colorBlue: #9698c8;
+$colorGreen: #337a3d;
+$colorPurple: #bb05fa;
+$colorLightBlue: #7060cd;
+$colorAqua: #016b9a;
+$gold: #D1A954;
+$d-gold: #856B35;
+* {
+	box-sizing: border-box;
+	color: #fff;
+}
+html {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+//Global properties
+a {
+	color: inherit;
+	&:hover {
+		text-decoration: none;
+	}
+}
+button {
+	&:hover,
+	&:focus {
+		outline: none;
+		color: inherit;
+	}
+}
+input {
+	&:hover,
+	&:focus {
+		outline: none;
+	}
+}
+.ttu{
+	text-transform: uppercase;
+}
+//Main Styles
+.my{
+	&-navbar{
+		padding-top: 40px;
+		padding-bottom: 200px;
+		width: 100%;
+		&-fixed{
+			position: fixed;
+		}
+		&-collapse{
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			&-links{
+
+			}
+			&-phone{
+				font-family: Open Sans Condensed;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 16px;
+				text-align: right;
+				letter-spacing: 0.05em;
+				text-transform: uppercase;
+				padding: 5px 0;
+				border-bottom: 2px solid $gold;
+				color: #fff;
+			}
+		}
+	}
+}
+.nav{
+	&-item{
+		padding-left: 60px;
+		&:first-child{
+			padding-left: 0;
+		}
+	}
+	&-link{
+		font-family: Open Sans Condensed;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+	}
+}
+
+.sec{
+	&-sec1{
+		&-row{
+			display: flex;
+			align-items: center;
+		}
+		&-title{
+			font-family: Open Sans Condensed;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 64px;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+		}
+		&-text{
+			padding-top: 50px;
+			font-family: Open Sans;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+		}
+		&-buttonDIV{
+			padding-top: 40px;
+			&-button{
+				transition: .3s all linear;
+				display: inline-block;
+				padding: 20px 50px;
+				background: $gold;
+				font-family: Open Sans Condensed;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 18px;
+				align-items: center;
+				text-align: center;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				border: 5px solid $gold;
+				&:hover{
+					transition: .3s all linear;
+					color: #fff;
+					border-color: #fff;
+					background: $d-gold;
+				}
+			}
+		}
+	}
+}

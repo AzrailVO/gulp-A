@@ -1,0 +1,1 @@
+const sect1Top = headSect.getBoundingClientRect().top
